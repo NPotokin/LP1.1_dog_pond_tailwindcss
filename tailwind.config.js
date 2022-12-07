@@ -10,10 +10,10 @@ module.exports = {
       //'accent1': '#ffffff',
       //'accent2': '#ffffff',
       //},
-      fontFamily: {
-        sans: ['Montserrat', 'sans-serif'],
-        serif: ['Merriweather', 'serif'],
-      },
+      //fontFamily: {
+        //sans: ['Montserrat', 'sans-serif'],
+        //serif: ['Merriweather', 'serif'],
+     // },
     extend: {},
   },
   plugins: [],
