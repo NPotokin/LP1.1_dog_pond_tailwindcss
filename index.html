@@ -97,21 +97,36 @@
         </div>
     </section>
     <!--Membership Options Section-->
-    <section class="max-w-5xl">
+    <section>
         <!--Flex container-->
-        <div class="max-w-5xl container flex-col items-center m-6">
+        <div class="max-w-5xl container md:flex-row flex-col items-center px-6 mx-auto mt-10 space-y-0">
             <!--Level card-->
-            <div class="flex-col text-center">
-                <h1 class="max-w-md text-3xl font-bold text-center md:text-4xl md:w-1/3">Gold Membership</h1>
-                <div class="w-1/4 m-6">
+            <div class="container max-w-5xl flex flex-col md:w-1/4 justify-between">
+                <h1 class="max-w-sm text-3xl font-bold text-center md:text-4xl">Gold Membership</h1>
+                <div class="w-1/3 md:w-1/2 mx-auto my-5">
                     <img src="/images/chaplinGold.png">
                 </div>
-                <p class="max-w-sm text-center text-slate-400 md:text-left">Lorem ipsum dolor sit amet,
+                <p class="max-w-sm text-center text-slate-400 md:text-left shadow-md rounded-xl p-6">Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                       nisi ut aliquip ex ea commodo consequat.</p>
-                <a class="p-3 px-6 pt-2 text-white bg-slate-500 rounded-full hover:bg-slate-400" 
-                    href="#">Join Us</a>          
+                <div class="flex justify-center my-9">
+                    <a class="p-3 px-6 pt-2 text-white bg-slate-500 rounded-full hover:bg-slate-400" 
+                href="#">Join Us</a>
+                </div>
+            </div>
+            <div class="max-w-5xl flex flex-col md:w-1/4">
+                <h1 class="max-w-sm text-3xl font-bold text-center md:text-4xl">Platinum Membership</h1>
+                <div class="w-1/3 md:w-1/2 mx-auto my-5">
+                    <img src="/images/chaplinPlatinum.png">
+                    
+                </div>
+
+            </div>
+        </div>
+            
+            
+             
     </section>
 </body>
 </html>
