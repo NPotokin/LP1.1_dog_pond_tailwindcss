@@ -32,7 +32,7 @@
 </header>
 <body>
     <!--Hero Section-->
-    <section id="hero">
+    <id="hero">
         <!--Flex container-->
         <div class="max-w-5xl container flex flex-col md:flex-row items-center px-6 mx-auto mt-10 space-y-0">
             <!--Left item-->
@@ -51,17 +51,17 @@
             </div>                 
             </div>
             <!--Image-->
-            <div class="w-1/3 my-auto">
-                <img src="/images/chaplin1.png">
+            <div class="w-1/2 my-auto">
+                <img src="/images/chaplin2.png">
             </div>
         </div>
         <!--About Section-->
         <section id="about">
             <!--Flex container-->
-            <div class="max-w-5xl container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0">
+            <div class="max-w-5xl container flex flex-col-reverse md:flex-row  justify-between items-center px-6 mx-auto mt-10 space-y-0">
             <!--Image-->
-            <div class="w-1/2 my-5">
-                <img src="/images/chaplin2.png">
+            <div class="w-1/3 my-5">
+                <img src="/images/chaplin1.png">
             </div>
             <!--Right item-->
             <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
@@ -99,14 +99,14 @@
     <!--Membership Options Section-->
     <section>
         <!--Flex container-->
-        <div class="max-w-5xl container md:flex-row flex-col items-center px-6 mx-auto mt-10 space-y-0">
-            <!--Level card-->
+        <div class="max-w-5xl container flex  flex-col md:flex-row  justify-between px-6 mx-auto mt-10">
+            <!--Gold Level card-->
             <div class="container max-w-5xl flex flex-col md:w-1/4 justify-between">
-                <h1 class="max-w-sm text-3xl font-bold text-center md:text-4xl">Gold Membership</h1>
+                <h1 class="max-w-sm text-3xl font-bold text-center md:text-4xl mx-auto">Gold <br> Membership</h1>
                 <div class="w-1/3 md:w-1/2 mx-auto my-5">
                     <img src="/images/chaplinGold.png">
                 </div>
-                <p class="max-w-sm text-center text-slate-400 md:text-left shadow-md rounded-xl p-6">Lorem ipsum dolor sit amet,
+                <p class="max-w-sm text-center text-slate-400 mx-auto">Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                       nisi ut aliquip ex ea commodo consequat.</p>
@@ -115,18 +115,101 @@
                 href="#">Join Us</a>
                 </div>
             </div>
-            <div class="max-w-5xl flex flex-col md:w-1/4">
-                <h1 class="max-w-sm text-3xl font-bold text-center md:text-4xl">Platinum Membership</h1>
+            <!--Platinum Level card-->
+            <div class="max-w-5xl flex flex-col md:w-1/4 justify-between">
+                <h1 class="max-w-sm text-3xl font-bold text-center md:text-4xl mx-auto">Platinum <br> Membership</h1>
                 <div class="w-1/3 md:w-1/2 mx-auto my-5">
                     <img src="/images/chaplinPlatinum.png">
-                    
                 </div>
-
+                <p class="max-w-sm text-center text-slate-400 mx-auto">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                      nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="flex justify-center my-9">
+                    <a class="p-3 px-6 pt-2 text-white bg-slate-500 rounded-full hover:bg-slate-400" 
+                    href="#">Join Us</a>
+                </div>
+            </div>
+            <!--Rainbow Level card-->
+            <div class="max-w-5xl flex flex-col md:w-1/4 justify-between">
+                <h1 class="max-w-sm text-3xl font-bold text-center md:text-4xl mx-auto">Rainbow <br> Membership</h1>
+                <div class="w-1/3 md:w-1/2 mx-auto my-5">
+                    <img src="/images/chaplinRainbow.png">
+                </div>
+                <p class="max-w-sm text-center text-slate-400 mx-auto">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                      nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="flex justify-center my-9">
+                    <a class="p-3 px-6 pt-2 text-white bg-slate-500 rounded-full hover:bg-slate-400" 
+                    href="#">Join Us</a>
+                </div>
             </div>
         </div>
-            
-            
-             
     </section>
+    <!--Registration form-->
+    <section>
+        <!--Container-->
+        <div class="max-w-5xl container flex flex-col px-6 mx-auto mt-10">
+            <h1 class="max-w-sm text-3xl font-bold text-center md:text-4xl mx-auto">Registration Form</h1>
+            <!--Form and img container-->
+            <div class="container flex flex-row px-6 mx-auto mt-10 justify-between">
+                <form class="w-2/3 flex flex-col px-6 mx-auto font-semibold text-xl">
+                    <label for="firstname">First Name</label>
+                    <input class="ring-2 rounded-lg ring-slate-400 my-2" type="text" id="firstname" name="firstname" required="">
+                    <label for="lastname">Last Name</label>
+                    <input class="ring-2 rounded-lg ring-slate-400 my-2" type="text" id="lastname" name="lastname" required="">
+                    <label for="email">Email adress</label>
+                    <input class="ring-2 rounded-lg ring-slate-400 my-2" type="email" id="email" name="email" required="">
+                    <label for="phone">Phone Number</label>
+                    <input class="ring-2 rounded-lg ring-slate-400 my-2" type="tel" id="phone" name="phone" reqired=""> 
+                    <h3 class="mt-12">Select membership level</h3>
+                    <div class="flex flex-col md:flex-row justify-between px-10 mt-4">
+                        <div>
+                            <input type="radio" id="gold" name="membership" value="gold">
+                            <label for="gold">Gold</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="platinum" name="membership" value="platinum">
+                            <label for="platinum">Platinum</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="rainbow" name="membership" value="rainbow">
+                            <label for="rainbow">Rainbow</label>
+                        </div>
+                    </div>
+                    <input class="px-10 mt-8 mx-auto p-3 pt-2 text-white bg-slate-500 rounded-full hover:bg-slate-400" type="submit">
+                </form>
+                <div class="hidden md:w-1/3 md:block">
+                    <img src="/images/chaplin4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Succes Story-->
+    <section>
+        <!--Container-->
+        <div class="max-w-5xl container flex flex-row mx-auto p-6 mt-8 justify-between">
+            <!--Image-->
+            <div class="hidden md:w-1/3 md:block my-12">
+                <img src="/images/chaplin5.png" alt="">
+            </div>
+            <!--Container with h1 p btn-->
+            <div class="w-2/3  container flex flex-col px-6 mx-auto mt-10">
+                <h1 class="font-bold text-center text-3xl md:text-5xl">Meet Chaplin</h1>
+                <p class="text-center text-slate-400 px-6 mx-auto mt-10">
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                       in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                         id est laborum
+                </p>      
+            </div>
+
+        </div>
+    </section>
+
 </body>
 </html>
