@@ -1,0 +1,45 @@
+//Array with objects - each one a Testimonial
+const testimonials = [
+    {
+    id: 1,
+    perPhoto: "images\person1.png",
+    perName: "Anna Smith",
+    perDog: "Proud mom of Stinky",
+    perTestimonials: "This dog changed my life! I mean, not only he is the sweetest one, bla bla bla..",
+    dogPhoto: "images\d1.webp", 
+    },
+    {
+    id: 2,
+    perPhoto: "images\person2.png",
+    perName: "Sam Kollins",
+    perDog: "Proud dad of Snowflake",
+    perTestimonials: "I watched his syory for a while, but last new year I've decided to get involved...",
+    dogPhoto: "images\d2.jpeg", 
+    },
+    {
+    id: 3,
+    perPhoto: "images\person3.png",
+    perName: "Kate Von Varhall",
+    perDog: "New mom for Bandit",
+    perTestimonials: "Bandit stole my heart from day one, it was a matter of time for me to adopt him",
+    dogPhoto: "images\d3.jpeg", 
+    },
+    {
+    id: 4,
+    perPhoto: "images\person4.png",
+    perName: "Nathaniel Jonston",
+    perDog: "Daddy for Archer",
+    perTestimonials: "I always wanted to have a dog, but only few months ago it became clear...",
+    dogPhoto: "images\d4.jpeg", 
+    },
+]
+
+//select items
+const perPhoto = document.getElementById("perPhoto");
+const perName = document.getElementById("perName");
+const perDog = document.getElementById("perDog");
+const perTestimonials = document.getElementById("perTestimonials");
+const dogPhoto = document.getElementById("dogPhoto");
+
+const prevBtn = document.querySelector(".prev-btn");
+const nextBtn = document.querySelector(".next-btn");
