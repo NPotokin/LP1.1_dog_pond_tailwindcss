@@ -35,11 +35,48 @@ const testimonials = [
 ]
 
 //select items
-const perPhoto = document.getElementById("perPhoto");
-const perName = document.getElementById("perName");
-const perDog = document.getElementById("perDog");
-const perTestimonials = document.getElementById("perTestimonials");
-const dogPhoto = document.getElementById("dogPhoto");
+const personPhoto = document.getElementById("perPhoto");
+const personName = document.getElementById("perName");
+const personDog = document.getElementById("perDog");
+const personTestimonials = document.getElementById("perTestimonials");
+const doggyPhoto = document.getElementById("dogPhoto");
 
 const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
+
+// Set starting item
+let currentItem = 0;
+
+// Load initial item
+window.addEventListener("DOMContentLoaded", function() {
+    showPerson(currentItem);
+});
+
+// show person based on item
+function showPerson (person) {
+    let item = testimonials[person];
+    personPhoto.srs = item.perPhoto;
+    personName.textContent = item.perName;
+    personDog.textContent = item.perDog;
+    personTestimonials.textContent = item.perTestimonials;
+    doggyPhoto.srs = item.dogPhoto;
+}
+
+// Show next person
+
+nextBtn.addEventListener("click", function() {
+    currentItem ++;
+    if (currentItem > testimonials.length - 1) {
+        currentItem = 0
+    }
+    showPerson(currentItem);
+})
+
+// Show previous person
+prevBtn.addEventListener("click", function() {
+    currentItem --;
+    if (currentItem < 0) {
+        currentItem = testimonials.length - 1;
+    }
+    showPerson(currentItem);
+})
