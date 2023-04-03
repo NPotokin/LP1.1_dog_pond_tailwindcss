@@ -1,32 +1,32 @@
 //Array with objects - each one a Testimonial
 const testimonials = [
     {
-    perPhoto: "images/person1.png",
+    perPhoto: "./images/person1.png",
     perName: "Anna Smith",
     perDog: "Proud mom of Stinky",
     perTestimonials: "This dog changed my life! I mean, not only he is the sweetest one, bla bla bla..",
-    dogPhoto: "images/d1.webp", 
+    dogPhoto: "./images/d1.webp", 
     },
     {
-    perPhoto: "images/person2.png",
+    perPhoto: "./images/person2.png",
     perName: "Sam Kollins",
     perDog: "Proud dad of Snowflake",
     perTestimonials: "I watched his syory for a while, but last new year I've decided to get involved...",
-    dogPhoto: "images/d2.jpeg", 
+    dogPhoto: "./images/d2.jpeg", 
     },
     {
-    perPhoto: "images/person3.png",
+    perPhoto: "./images/person3.png",
     perName: "Kate Von Varhall",
     perDog: "New mom for Bandit",
     perTestimonials: "Bandit stole my heart from day one, it was a matter of time for me to adopt him",
-    dogPhoto: "images/d3.jpeg", 
+    dogPhoto: "./images/d3.jpeg", 
     },
     {
-    perPhoto: "images/person4.png",
+    perPhoto: "./images/person4.png",
     perName: "Nathaniel Jonston",
     perDog: "Daddy for Archer",
     perTestimonials: "I always wanted to have a dog, but only few months ago it became clear...",
-    dogPhoto: "images/d4.jpeg", 
+    dogPhoto: "./images/d4.jpeg", 
     },
 ]
 
